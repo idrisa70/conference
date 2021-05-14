@@ -1,0 +1,156 @@
+.section-padding {
+  padding: 100px 0;
+}
+.section-padding2 {
+  padding: 100px 0 70px;
+}
+.section-padding3 {
+  padding: 50px;
+}
+
+.space10 {
+  height: 10px;
+}
+
+.space20 {
+  height: 20px;
+}
+
+.space30 {
+  height: 30px;
+}
+
+.space40 {
+  height: 40px;
+}
+
+.space50 {
+  height: 50px;
+}
+
+.div-div-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.div-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .div-div-container {
+    width: 100%;
+  }
+}
+
+.div-container,
+.div-container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .div-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .div-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .div-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .div-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .div-container {
+    max-width: 1320px;
+  }
+}
+
+.div-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.heading h2 {
+  font-size: 30px;
+}
+
+@media (min-width: 576px) {
+  .cl-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .cl-md-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%;
+  }
+
+  .cl-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .cl-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .cl-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.input-form {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.justify-text-right {
+  justify-content: flex-end !important;
+}
+
+.justify-text-center {
+  justify-content: center !important;
+}
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}

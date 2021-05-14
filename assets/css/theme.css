@@ -1,0 +1,415 @@
+/* Base CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+a,
+a:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.header-area {
+  padding: 15px 0;
+}
+.main-menu {
+  text-align: right;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu li a {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.main-menu li a:hover {
+  color: #005ca9;
+}
+
+/* Hero Area CSS Starts*/
+
+.welcome-area {
+  position: relative;
+  z-index: 1;
+  background: url(../img/hero-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.welcome-area:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #000;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.wlcm-title h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 100px;
+}
+
+.wlcm-title p {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .wlcm-title h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .wlcm-title p {
+    font-size: 18px;
+  }
+
+  .welcome-area {
+
+    height: auto;
+    padding: 100px 0;
+  }
+  .title h2 {                                                       
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  .title h2{
+    font-size: 30px;
+  }
+
+  ul.menu-list {
+    display: none;
+  }
+  ul.menu-list.active {
+    display: block;
+  }
+
+  /* ul.menu-list.active li {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  } */
+  ul.menu-list.active li{
+    display: block;
+  }
+  ul.menu-list.active li a {
+    /* color: white; */
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+  .wlcm-title {
+    padding: 30px;
+  }
+  .wlcm-title {
+    padding: 30px;
+  }
+
+  .title {
+    padding: 10px;
+  }
+
+  .about-area:after {
+    display: none;
+  }
+
+  .m-menu-list span {
+    height: 2px;
+    width: 30px;
+    background: #000;
+    display: block;
+    margin: 8px 0;
+  }
+
+  .m-menu-list {
+    cursor: pointer;
+    position: absolute;
+    right: 23px;
+    top: 36px;
+  }
+
+  .header-area {
+    padding: 10px 20px;
+  }
+
+
+  .main-menu {
+    position: relative;
+      z-index: 2;
+  }
+
+  ul.menu-list {
+      position: absolute;
+      background: #f1f1f1;
+      right: 0;
+      top: 18px;
+      text-align: left;
+      padding: 20px;
+  }
+
+  .copyright {
+    padding: 30px;
+  }
+  .heading h2 {
+    font-size: 22px !important;
+  }
+
+  
+
+}
+.title h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+.light-title{
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 425px) {
+  .key-card {
+
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .about-area {
+    max-width: 300px;
+  }
+  input{
+    width: 250px !important;
+  }
+  form#form {
+    max-width: 300px;
+  }
+}
+
+/* About Area CSS Starts*/
+
+.about-area {
+  position: relative;
+  z-index: 2;
+}
+
+.about-area:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background: url(../img/about.jpg) no-repeat;
+  left: 0;
+  top: 0;
+  width: 45%;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about-area img {
+    min-height: 400px;
+    object-fit: cover;
+  }
+}
+.about-area ul {
+  padding-left: 0;
+  list-style: none;
+}
+.about-area ul li {
+  font-weight: 300;
+  color: #606060;
+  font-size: 15px;
+}
+.list-icon {
+  font-size: 10px;
+  margin-right: 12px;
+  color: #4267b2;
+}
+
+/* Speaker Area CSS Starts*/
+.keynote-area {
+  background: #f7f8fa;
+}
+.user img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.key-card {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.keytextwrap small {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.keytextwrap {
+  padding: 0 40px 40px 40px;
+}
+.user {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.user:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: url(../img/speaker-bg.png) no-repeat;
+  z-index: -1;
+}
+
+.person-list {
+  width: 100px;
+  margin: 0 auto;
+}
+
+/* Footer Area CSS Starts*/
+.footer-area {
+  background-color: #34343c;
+  color: white;
+  padding: 40px 0;
+  overflow-x: hidden;
+}
+/* Footer Area CSS Ends*/
+
+/* ************************************* */
+
+/* Contact Page CSS Starts*/
+.contact-area {
+  text-align: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-text {
+  width: 100%;
+}
+
+.contact-text h1 {
+  font-size: 30px;
+  line-height: 45px;
+}
+.light-title {
+  font-weight: 300;
+}
+
+h4.light-title a {
+  font-size: 20px;
+  color: #000;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+/* Contact Page CSS Ends*/
+
+/* ************************************* */
+
+/* Registration Page CSS Ends*/
+.my-btn {
+  padding: 13px 25px;
+  background-color: #4267b2;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.cbtn {
+  text-align: center;
+}
+.input-form.error {
+  color: rgb(255, 61, 61);
+  border: 1.5px solid rgb(255, 67, 67) !important;
+}
+.input-form.success {
+  color: rgb(33, 180, 33);
+  border: 1.5px solid rgb(19, 160, 19) !important;
+}
+.blue {
+  color: blue;
+}
+/* Registration Page CSS Ends*/
+
+input#discount {
+  margin: 30px 0;
+}
+
+.copyright h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.mt-2 {
+  margin-top: 5px;
+  margin-left: 13px;
+}
+.mt-4 {
+  margin-top: 10px;
+}
+.modal {
+  background: white;
+  padding: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.404);
+  z-index: 10;
+  transition: all 0.5s;
+  visibility: hidden;
+}
